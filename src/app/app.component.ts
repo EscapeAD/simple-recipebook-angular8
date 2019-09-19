@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  optionLoaded: string = "recipes"
+
+  onNavigation(option){
+    this.optionLoaded = option
+  }
 }
